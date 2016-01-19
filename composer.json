@@ -1,0 +1,40 @@
+{
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "yiisoft/yii",
+				"version": "1.1",
+				"source": {
+					"url":"https://github.com/yiisoft/yii.git",
+					"type":"git",
+					"reference":"tags/1.1"
+				}
+			}
+		},
+		{
+			"type": "git",
+			"url": "git://github.com/vakata/jstree.git"
+		}
+	],
+
+	"autoload": {
+		"classmap": [
+			"protected/controllers",
+			"protected/models",
+			"dependencies/yiisoft/yii/framework/YiiBase.php"
+		]
+	},
+
+	"require": {
+		"yiisoft/yii": "*",
+		"robloach/component-installer": "*",
+		"components/jquery": "2.2.0",
+		"vakata/jstree" : "3.2.1"
+	},
+
+	"config": {
+		"vendor-dir": "dependencies",
+		"component-dir": "public_html/assets"
+	}
+}
